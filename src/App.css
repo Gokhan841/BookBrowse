@@ -1,0 +1,254 @@
+.App {
+  text-align: center;
+}
+
+/* ///////////////Navbar.css navbar.js için */
+
+nav {
+  background-color: darkolivegreen; /* Zümrüt yeşili renk kodu */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Sol ve sağdan boşluk ekleyebilirsiniz */
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Ortalamak için */
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav a {
+  color: #fff; /* Yazı rengi beyaz */
+  text-decoration: none;
+  font-weight: normal;
+  padding: 10px; /* İç boşluk */
+}
+
+nav .active {
+  font-weight: bold;
+  color: #FFD700; /* Aktif bağlantı rengi, örneğin altın sarısı */
+}
+
+
+/* //////////////////////////////Form genel stili */
+form {
+  max-width: 400px; /* Form genişliği */
+  margin: 20px auto; /* Ortalamak için */
+  padding: 20px; /* İç boşluk */
+  background-color: #f4f4f4; /* Hafif gri arka plan rengi */
+  border-radius: 8px; /* Köşeleri yuvarlatma */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Input alanları için stil */
+form input[type="text"],
+form select {
+  width: 100%; /* Genişlik %100 */
+  padding: 10px; /* İç boşluk */
+  margin-bottom: 15px; /* Alt boşluk */
+  border: 1px solid #ccc; /* Gri kenarlık */
+  border-radius: 4px; /* Köşeleri yuvarlatma */
+  box-sizing: border-box; /* Padding ve border'ı hesaba kat */
+  font-size: 16px; /* Yazı boyutu */
+}
+
+/* Buton için stil */
+form button {
+  width: 100%; /* Genişlik %100 */
+  padding: 10px; /* İç boşluk */
+  background-color: #004d40; /* Zümrüt yeşili arka plan rengi */
+  color: #fff; /* Beyaz yazı rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 4px; /* Köşeleri yuvarlatma */
+  font-size: 16px; /* Yazı boyutu */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s ease; /* Renk geçiş efekti */
+}
+
+/* Buton hover efekti */
+form button:hover {
+  background-color: #00695c; /* Hover durumunda koyulaşan renk */
+}
+
+
+
+
+
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Kategoriler arasındaki boşluk */
+  padding: 10px;
+ 
+}
+.categories ul {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding: 0; /* İç boşluk kaldır */
+  margin: 0; /* Dış boşluk kaldır */
+}
+
+.category-link {
+  display: block;
+  padding: 10px 15px;
+  background-color: #e0f2f1; /* Açık yeşil arka plan rengi */
+  color: #00796b; /* Zümrüt yeşili yazı rengi */
+  border-radius: 5px;
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Renk geçiş efekti */
+  
+}
+
+.category-link:hover {
+  background-color: #b2dfdb; /* Hover durumunda daha açık renk */
+}
+
+
+/* Kategori Detayları Sayfası */
+.category-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.category-detail h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #004d40; /* Başlık rengi */
+}
+
+.category-detail p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333; /* Metin rengi */
+}
+
+.category-detail ul {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding: 0;
+}
+
+.category-detail li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00796b; /* Kitap bilgileri rengi */
+}
+
+
+/* -----------------Liste bileşeni için ana kapsayıcı */
+.list-container {
+  max-width: 600px; /* Liste genişliği */
+  margin: 10px auto; /* Ortalamak için */
+  padding: 20px; /* İç boşluk */
+  background-color: #f9f9f9; /* Hafif gri arka plan rengi */
+  border-radius: 8px; /* Köşeleri yuvarlatma */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Arama kutusu için stil */
+.search-input {
+  width: calc(100% - 22px); /* Genişlik hesaplama */
+  padding: 10px; /* İç boşluk */
+  margin-bottom: 15px; /* Alt boşluk */
+  border: 1px solid #ccc; /* Gri kenarlık */
+  border-radius: 4px; /* Köşeleri yuvarlatma */
+  box-sizing: border-box; /* Padding ve border'ı hesaba kat */
+  font-size: 12px; /* Yazı boyutu */
+}
+
+/* Kategori seçici için stil */
+.category-select {
+  width: calc(100% - 22px); /* Genişlik hesaplama */
+  padding: 10px; /* İç boşluk */
+  margin-bottom: 15px; /* Alt boşluk */
+  border: 1px solid #ccc; /* Gri kenarlık */
+  border-radius: 4px; /* Köşeleri yuvarlatma */
+  box-sizing: border-box; /* Padding ve border'ı hesaba kat */
+  font-size: 16px; /* Yazı boyutu */
+}
+
+/* Kitap listesi için stil */
+.book-list, .filtered-book-list {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding: 0; /* İç boşluk kaldır */
+  margin: 0; /* Dış boşluk kaldır */
+}
+
+/* Kitap listesi elemanları için stil */
+.book-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd; /* Alt kenarlık */
+  font-size: 16px;
+  color: #333; /* Kitap bilgileri rengi */
+}
+
+/* Son eleman için alt kenarlık yok */
+.book-item:last-child {
+  border-bottom: none;
+}
+
+/* Kitap başlığı için stil */
+.book-title {
+  font-weight: bold; /* Başlığı kalın yap */
+}
+
+/* Kitap yazarının stilini ayarla */
+.book-author {
+  color: #666; /* Renk koyu gri */
+}
+/* ---------------------------------------------- */
+
+
+
+
+/*-------------- BookDetail component styling -----------------------*/
+
+.book-detail-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-detail-container p {
+  font-size: 18px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.book-detail-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #004d40;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.book-detail-container a:hover {
+  background-color: #00695c;
+}
+
+/*--------------  -----------------------*/
